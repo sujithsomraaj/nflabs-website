@@ -80,6 +80,15 @@ body {
   align-items: center;
 } */
 
+.logo {
+  width: 170px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo:hover {
   cursor: pointer;
 }

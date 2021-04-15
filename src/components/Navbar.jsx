@@ -3,6 +3,7 @@ import Lottie from 'react-lottie'
 import { BiMenu } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 import { Drawer } from 'antd';
+import NFlogo from "../assets/NF Labs Logo.svg"
 import animation1 from '../assets/lottie/hamburger.json'
 
 export default class Navbar extends React.Component{
@@ -35,7 +36,7 @@ onClose = () => {
             <div className="container">
             <div className="navbar-container">
               <div className="logo">
-                  <h1 onClick={() => {window.location = "/"}}>NF Labs</h1>
+                  <img onClick={() => {window.location = "/"}} src={NFlogo} alt="NF labs logo"/>
               </div>
                 <Drawer
                 className="mobile-nav"
