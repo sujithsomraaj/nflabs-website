@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import CryptoPetShop from '../assets/cryptopetshop.jpeg'
+import petcoinlogo from "../assets/PetCoin_logo.png";
 export default class Products extends React.Component {
     render(){
         return(
@@ -18,10 +18,10 @@ export default class Products extends React.Component {
                   </div>
                   <div className="products container">
                     <div className="product-card">
-                        <div>
-                            <img src={CryptoPetShop} alt="crypto-pets-shop-logo" />
+                        <div className="product__img--container">
+                            <img src={petcoinlogo} alt="crypto-pets-shop-logo" />
                         </div>
-                        <div>
+                        <div className="product-desc">
                             <h2>
                                 Crypto Pets Shop
                             </h2>
