@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from "axios"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Lottie from 'react-lottie'
@@ -7,7 +8,25 @@ import animation2 from '../assets/lottie/section-one.json'
 import animation3 from '../assets/lottie/flying-birds.json'
 
 export default class Home extends React.Component{
+    state= {
+        EmailAddress: "",
+    }
+
+    onChangeHandle = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
+
+    submitHandler = (e) => {
+        e.preventDefault()
+        axios.post("https://contact-nodeberry.herokuapp.com/contacts/nf_labs/subscribe", this.state)
+
+        this.setState({
+            EmailAddress: "",
+        })
+    }
     render(){
+        const {EmailAddress} = this.state
+
         const defaultOptions1 = {
             loop: true,
             autoplay: true, 
@@ -95,12 +114,20 @@ export default class Home extends React.Component{
                     <p>
                         Stay ahead of the curve and sign up for the latest news and updates from NF Labs.
                     </p>
-                    <div>
-                        <input placeholder="Enter Your E-mail Address" />
-                        <button>
-                            Enroll Me In
-                        </button>
-                    </div>
+                        <form onSubmit={this.submitHandler}>
+                            <div>
+                                <input 
+                                type="email" 
+                                name="EmailAddress" 
+                                value={EmailAddress}
+                                placeholder="Enter Your E-mail Address" 
+                                onChange={this.onChangeHandle} 
+                                />
+                                <button type="submit">
+                                    Enroll Me In
+                                </button>
+                            </div>
+                        </form>
                 </div>
             <Footer />
             </div>
