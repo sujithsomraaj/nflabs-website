@@ -121,7 +121,8 @@ export default class Home extends React.Component{
                                 name="EmailAddress" 
                                 value={EmailAddress}
                                 placeholder="Enter Your E-mail Address" 
-                                onChange={this.onChangeHandle} 
+                                onChange={this.onChangeHandle}
+                                required
                                 />
                                 <button type="submit">
                                     Enroll Me In
