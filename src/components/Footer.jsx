@@ -1,5 +1,5 @@
 import React from 'react';
-import fb from "../assets/FB.svg";
+import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
 import linkedin from "../assets/linkedin.svg";
@@ -10,19 +10,19 @@ export default class Footer extends React.Component{
         return(
             <div className="footer-wrapper">
                 <div className="footer container">
-                    <p className="copy">
-                        Copyright © 2020-2021
-                    </p>
+                <div className="social-icons">
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="18px" height="14px" src={facebook} alt="Petcoin Facebook"/></a></div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={instagram} alt="Petcoin Instagram"/></a></div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={twitter} alt="Petcoin Twitter"/></a></div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={linkedin} alt="Petcoin Linkedin"/></a></div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={telegram} alt="Petcoin Telegram"/></a></div>
+                    </div>
                     <p className="footer-tab2">
                     <span><a href="##">Privacy Policy</a></span> | <span><a href="##">Terms & Conditions</a></span>  | <span><a href="##">Disclaimer</a></span> 
                     </p>
-                    <div className="social-icons">
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img src={fb} alt="Petcoin Facebook"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Petcoin Instagram"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Petcoin Twitter"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="Petcoin Linkedin"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img src={telegram} alt="Petcoin Telegram"/></a></div>
-                    </div>
+                    <p className="copy">
+                    © 2021 NF Labs. All rights reserved.
+                    </p>
                 </div>
             </div>
         )

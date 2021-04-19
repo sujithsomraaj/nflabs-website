@@ -10,6 +10,7 @@ import animation3 from '../assets/lottie/flying-birds.json'
 export default class Home extends React.Component{
     state= {
         EmailAddress: "",
+        isSubmitted: false,
     }
 
     onChangeHandle = (e) => {
@@ -18,14 +19,17 @@ export default class Home extends React.Component{
 
     submitHandler = (e) => {
         e.preventDefault()
-        axios.post("https://contact-nodeberry.herokuapp.com/contacts/nf_labs/subscribe", this.state)
+        axios.post("https://contact-nodeberry.herokuapp.com/contacts/nf_labs/subscribe", {
+            EmailAddress: this.state.EmailAddress,
+        })
 
         this.setState({
             EmailAddress: "",
+            isSubmitted: true,
         })
     }
     render(){
-        const {EmailAddress} = this.state
+        const {EmailAddress, isSubmitted} = this.state
 
         const defaultOptions1 = {
             loop: true,
@@ -128,6 +132,9 @@ export default class Home extends React.Component{
                                     Enroll Me In
                                 </button>
                             </div>
+                            {
+                                isSubmitted && <p className="success-message">Successfully Sent!</p>
+                            }
                         </form>
                 </div>
             <Footer />

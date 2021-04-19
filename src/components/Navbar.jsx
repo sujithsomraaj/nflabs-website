@@ -55,7 +55,7 @@ onClose = () => {
                     <li className="mobile-navbar-items" onClick = {()=>{window.location = "/products"}}>Products</li>
                     <li className="mobile-navbar-items">Services</li>
                     <li className="mobile-navbar-items">News and Events</li>
-                    <li className="mobile-navbar-items">Contact Us</li>
+                    <li className="mobile-navbar-items" onClick={() => {window.location = "/contact-us"}}>Contact Us</li>
                   </ul>
                     </Drawer>
                   <ul>
@@ -63,7 +63,7 @@ onClose = () => {
                     <li onClick = {()=>{window.location = "/products"}}>Products</li>
                     <li>Services</li>
                     <li>News and Events</li>
-                    <li>Contact Us</li>
+                    <li onClick={() => {window.location = "/contact-us"}}>Contact Us</li>
                   </ul>
                   <div className="menu-button-container">
                     <button className="menu-button" type="primary" onClick={this.showDrawer}>
