@@ -103,6 +103,10 @@ body {
   color: inherit;
 }
 
+.footer-tab2 span a:hover {
+  color: #ff9933;
+}
+
 .social-icons {
   display: flex;
   justify-content: space-between;
@@ -113,6 +117,10 @@ body {
 .social-items img {
   width: 30px;
   height: 30px;
+}
+
+.copy:hover {
+  color: #ff9933;
 }
 
 /* Home CSS */
