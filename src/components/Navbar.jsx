@@ -51,7 +51,7 @@ onClose = () => {
                         </button>
                     </div>
                     <ul>
-                    <li className="mobile-navbar-items">Mission</li>
+                    <li className="mobile-navbar-items" onClick={() => {window.location = "/#mission"}}>Mission</li>
                     <li className="mobile-navbar-items" onClick = {()=>{window.location = "/products"}}>Products</li>
                     <li className="mobile-navbar-items">News</li>
                     <li className="mobile-navbar-items">Careers</li>
