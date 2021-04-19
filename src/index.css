@@ -34,8 +34,8 @@ body {
 
 .navbar-container {
   height: 80px;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--white);
   padding-top: 20px !important;
@@ -43,12 +43,15 @@ body {
 }
 
 .navbar-container ul {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  display: flex;
   list-style: none;
   font-family: var(--font-1);
   color: var(--grey);
   font-size: 16px;
+}
+
+.navbar-container ul li {
+  margin-left: 24px;
 }
 
 .navbar-container ul li:hover {
@@ -479,22 +482,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navbar-container ul li {
-    margin-left: 24px;
-  }
-
-  .navbar-container ul {
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 683px) {
+@media only screen and (max-width: 915px) {
   .navbar-container ul {
     display: none;
   }
