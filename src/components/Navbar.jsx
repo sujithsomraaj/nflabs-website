@@ -59,7 +59,7 @@ onClose = () => {
                   </ul>
                     </Drawer>
                   <ul>
-                    <li>Mission</li>
+                    <li onClick={() => {window.location = "/#mission"}}>Mission</li>
                     <li onClick = {()=>{window.location = "/products"}}>Products</li>
                     <li>News</li>
                     <li>Careers</li>

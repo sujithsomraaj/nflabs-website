@@ -92,7 +92,7 @@ export default class Home extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="section-wrapper">
+                <div id="mission" className="section-wrapper">
                 <div className="section-1 container">
                     <Lottie options={defaultOptions3} height={300} />
                     <div>
