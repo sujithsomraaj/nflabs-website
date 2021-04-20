@@ -1,7 +1,10 @@
 import React from 'react';
-import {GrFacebookOption} from "react-icons/gr";
-import {ImInstagram} from "react-icons/im";
-import {FaTwitter, FaLinkedinIn, FaTelegramPlane} from "react-icons/fa";
+import {
+    FaFacebook, 
+    FaInstagram, 
+    FaTwitter, 
+    FaLinkedinIn, 
+    FaTelegramPlane} from "react-icons/fa";
 
 
 export default class Footer extends React.Component{
@@ -10,15 +13,15 @@ export default class Footer extends React.Component{
             <div className="footer-wrapper">
                 <div className="footer container">
                 <div className="social-icons">
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><GrFacebookOption/></a>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
                         </div>
-                        <div className="social-items"><a style={{fontSize:"17px"}} href="##" target="_blank" rel="noopener noreferrer"><ImInstagram/></a>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                         </div>
                         <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
                         </div>
                         <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaLinkedinIn/></a>
                         </div>
-                        <div className="social-items"><a style={{fontSize:"19px"}} href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
                         </div>
                     </div>
                     <p className="footer-tab2">
