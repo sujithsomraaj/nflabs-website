@@ -2,7 +2,6 @@ import React from 'react'
 import axios from "axios"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Loader from "../components/Loader"
 import Lottie from 'react-lottie'
 import animation1 from '../assets/lottie/header.json'
 import animation2 from '../assets/lottie/section-one.json'
