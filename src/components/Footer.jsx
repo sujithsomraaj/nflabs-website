@@ -1,7 +1,7 @@
 import React from 'react';
 import {GrFacebookOption} from "react-icons/gr";
 import {ImInstagram} from "react-icons/im";
-import {FaTwitter, FaLinkedin, FaTelegramPlane} from "react-icons/fa";
+import {FaTwitter, FaLinkedinIn, FaTelegramPlane} from "react-icons/fa";
 
 
 export default class Footer extends React.Component{
@@ -16,9 +16,9 @@ export default class Footer extends React.Component{
                         </div>
                         <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
                         </div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaLinkedinIn/></a>
                         </div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
+                        <div className="social-items"><a style={{fontSize:"19px"}} href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
                         </div>
                     </div>
                     <p className="footer-tab2">
