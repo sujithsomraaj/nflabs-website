@@ -586,6 +586,15 @@ li ol > li:before {
   cursor: pointer;
 }
 
+/* loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-height: 30px;
+  width: 100%;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1055px) {

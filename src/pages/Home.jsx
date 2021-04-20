@@ -2,15 +2,19 @@ import React from 'react'
 import axios from "axios"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Loader from "../components/Loader"
 import Lottie from 'react-lottie'
 import animation1 from '../assets/lottie/header.json'
 import animation2 from '../assets/lottie/section-one.json'
 import animation3 from '../assets/lottie/flying-birds.json'
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 export default class Home extends React.Component{
     state= {
         EmailAddress: "",
         isSubmitted: false,
+        isLoading: false,
     }
 
     onChangeHandle = (e) => {
@@ -19,6 +23,10 @@ export default class Home extends React.Component{
 
     submitHandler = (e) => {
         e.preventDefault()
+        this.setState({
+            isLoading: true,
+        })
+
         axios.post("https://contact-nodeberry.herokuapp.com/contacts/nf_labs/subscribe", {
             EmailAddress: this.state.EmailAddress,
         })
@@ -26,10 +34,15 @@ export default class Home extends React.Component{
         this.setState({
             EmailAddress: "",
             isSubmitted: true,
+            isLoading: false,
         })
+
+        setTimeout(function(){
+            document.getElementById("success").innerHTML="";
+            },6000);
     }
     render(){
-        const {EmailAddress, isSubmitted} = this.state
+        const {EmailAddress, isSubmitted, isLoading} = this.state
 
         const defaultOptions1 = {
             loop: true,
@@ -55,6 +68,8 @@ export default class Home extends React.Component{
               preserveAspectRatio: 'xMidYMid slice'
             }
         };
+
+        const antIcon = <LoadingOutlined style={{ color: "#ff9933" }} spin />;
         return(
             <div>
                 <Navbar />
@@ -133,7 +148,10 @@ export default class Home extends React.Component{
                                 </button>
                             </div>
                             {
-                                isSubmitted && <p className="success-message">Successfully Sent!</p>
+                                isLoading && <div className="loader-container"><Spin indicator={antIcon}/></div>
+                            }
+                            {
+                                isSubmitted && <p id="success" className="success-message">You are now subscribed to receive our latest news and updates</p>
                             }
                         </form>
                 </div>
