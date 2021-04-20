@@ -7,7 +7,7 @@ export default class Disclaimer extends React.Component {
         return(
             <div>
                 <Navbar />
-                <div className="products-wrapper">
+                <div className="products-wrapper mg-buttom">
                 <div className="container">
                     <h1>
                     Privacy Policy
