@@ -1,9 +1,8 @@
 import React from 'react';
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
-import twitter from "../assets/twitter.svg";
-import linkedin from "../assets/linkedin.svg";
-import telegram from "../assets/telegram.svg";
+import {GrFacebookOption} from "react-icons/gr";
+import {ImInstagram} from "react-icons/im";
+import {FaTwitter, FaLinkedin, FaTelegramPlane} from "react-icons/fa";
+
 
 export default class Footer extends React.Component{
     render(){
@@ -11,11 +10,16 @@ export default class Footer extends React.Component{
             <div className="footer-wrapper">
                 <div className="footer container">
                 <div className="social-icons">
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="18px" height="14px" src={facebook} alt="Petcoin Facebook"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={instagram} alt="Petcoin Instagram"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={twitter} alt="Petcoin Twitter"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={linkedin} alt="Petcoin Linkedin"/></a></div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={telegram} alt="Petcoin Telegram"/></a></div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><GrFacebookOption/></a>
+                        </div>
+                        <div className="social-items"><a style={{fontSize:"17px"}} href="##" target="_blank" rel="noopener noreferrer"><ImInstagram/></a>
+                        </div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
+                        </div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+                        </div>
+                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
+                        </div>
                     </div>
                     <p className="footer-tab2">
                     <span><a href="/privacy-policy">Privacy Policy</a></span> | <span><a href="/terms-and-conditions">Terms & Conditions</a></span>  | <span><a href="/disclaimer">Disclaimer</a></span> 

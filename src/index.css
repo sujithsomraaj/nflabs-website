@@ -112,6 +112,16 @@ body {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.social-items a {
+  color: #8a8a8a;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: var(--orange);
 }
 
 .copy:hover {
@@ -643,6 +653,9 @@ li ol > li:before {
     display: flex;
     justify-content: center;
     margin-bottom: 18px;
+  }
+  .social-items:not(:first-child) {
+    margin-left: 10px;
   }
 }
 
