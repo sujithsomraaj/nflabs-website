@@ -401,6 +401,10 @@ body {
   margin-bottom: 4rem;
 }
 
+.mg-top {
+  margin-top: 3rem;
+}
+
 .form-group input[type="submit"] {
   width: 100%;
   border: none;
@@ -456,6 +460,82 @@ body {
   width: 16px;
   height: 22px;
   padding-top: 3px;
+}
+
+/* disclaimer page */
+.products-wrapper .left-text {
+  text-align: left;
+  font-size: 17px;
+}
+
+.disclaimer-list li {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-family: var(--font-1);
+  padding-left: 1rem;
+}
+
+/* privacy page */
+.products-wrapper .head-text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--font-1);
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+}
+
+ol > li:before {
+  content: counters(item, ".") ". ";
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+li ol > li {
+  margin: 0;
+}
+
+li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+.privacy-item li {
+  font-size: 17px;
+  font-family: var(--font-1);
+  padding-left: 1rem;
+}
+
+.privacy-item li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.circle-list {
+  list-style-type: disc;
+}
+
+.circle-list li {
+  margin-bottom: 10px;
+}
+
+.sub-list li {
+  margin-top: 20px;
+}
+
+.sub-list li span {
+  margin-right: 10px;
+}
+
+.text-red {
+  color: #ff3333;
 }
 
 /* mobile navigation */

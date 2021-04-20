@@ -18,7 +18,7 @@ export default class Footer extends React.Component{
                         <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><img width="16px" height="14px" src={telegram} alt="Petcoin Telegram"/></a></div>
                     </div>
                     <p className="footer-tab2">
-                    <span><a href="##">Privacy Policy</a></span> | <span><a href="##">Terms & Conditions</a></span>  | <span><a href="##">Disclaimer</a></span> 
+                    <span><a href="/privacy-policy">Privacy Policy</a></span> | <span><a href="/terms-and-conditions">Terms & Conditions</a></span>  | <span><a href="/disclaimer">Disclaimer</a></span> 
                     </p>
                     <p className="copy">
                     © 2021 NF Labs. All rights reserved.
