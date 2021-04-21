@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Map from "../assets/map.png"
+import Map from "../assets/uk_map.png"
 import email from "../assets/email.svg"
 import telephone from "../assets/telephone.svg"
 import location from "../assets/location.svg"
@@ -53,9 +53,9 @@ export default class ContactUs extends React.Component{
                             </div>
                             <div className="contact-img-icon">
                                 <img src={location} alt="NF Labs Location"/>
-                                <h4>35 Mandalay Road # 13–37 Mandalay Towers
+                                <h4>Kemp House, 152-160 City Road,
                                 <br/>
-                                Singapore 308215 Singapore</h4>
+                                London, UK EC IV 2NX</h4>
                             </div>
                         </div>
                     </div>
