@@ -32,7 +32,7 @@ export default class ContactUs extends React.Component{
                                 <input type="email" placeholder="Email Id" required/>
                             </div>
                             <div className="form-group">
-                                <textarea type="text" placeholder="Message" cols="30" rows="5" required/>
+                                <textarea type="text" placeholder="Message" cols="30" rows="4" required/>
                             </div>
                             <div className="form-group">
                                 <input type="submit" value="Submit"/>
