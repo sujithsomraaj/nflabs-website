@@ -185,6 +185,7 @@ body {
   background: var(--white2);
   height: 500px;
   padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .section-wrapper-white {
@@ -233,17 +234,17 @@ body {
   padding: 2rem;
   margin-bottom: 3rem;
   border-radius: 3px;
+  display: grid;
+  place-items: center;
 }
 
 .newsletter h2 {
   font-size: var(--size-2);
   font-family: var(--font-1);
   color: var(--black);
-  text-align: center;
 }
 
 .newsletter p {
-  text-align: center;
   line-height: 40px;
   font-family: var(--font-1);
   font-size: var(--size-3);
@@ -252,33 +253,36 @@ body {
 }
 
 .newsletter div {
-  width: 50%;
-  margin-left: 25%;
+  position: relative;
+  width: 100%;
+  max-width: 40vw;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .newsletter input {
   padding: 1rem;
-  width: 60%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: 55px;
   outline-color: var(--orange);
   font-family: var(--font-1);
   font-size: 1rem;
+  border: 1px solid #b2b2b2;
+  border-radius: 8px;
 }
 
 .newsletter button {
+  position: absolute;
+  max-height: 55px;
+  top: 0;
+  right: 0px;
   padding: 1rem 2rem;
-  margin-left: 1rem;
-  background: var(--white);
-  border: 2px solid #ff9933;
-  color: var(--orange);
+  background: var(--orange);
+  border: none;
+  color: var(--white);
   text-transform: capitalize;
   font-family: var(--font-1);
-  border-radius: 6px;
+  border-radius: 0px 8px 8px 0px;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -652,6 +656,10 @@ li ol > li:before {
   .section-1 svg {
     margin-top: 1rem;
   }
+
+  .newsletter div {
+    max-width: 60vw;
+  }
 }
 
 @media only screen and (max-width: 880px) {
@@ -694,27 +702,16 @@ li ol > li:before {
   }
 }
 
-@media only screen and (max-width: 1137px) {
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
+@media only screen and (max-width: 600px) {
   .newsletter div {
-    width: 100%;
-    margin-left: 0;
-    display: grid;
-    place-items: center;
+    position: unset;
   }
-
-  .newsletter input {
-    width: 100%;
-  }
-
   .newsletter button {
-    margin-left: 0;
+    position: unset;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
   }
 }
 

@@ -132,27 +132,27 @@ export default class Home extends React.Component{
                     <p>
                         Stay ahead of the curve and sign up for the latest news and updates from NF Labs.
                     </p>
+                    <div>
                         <form onSubmit={this.submitHandler}>
-                            <div>
                                 <input 
                                 type="email" 
                                 name="EmailAddress" 
                                 value={EmailAddress}
-                                placeholder="Enter Your E-mail Address" 
+                                placeholder="Enter your e-mail address" 
                                 onChange={this.onChangeHandle}
                                 required
                                 />
                                 <button type="submit">
                                     Enroll Me In
                                 </button>
-                            </div>
-                            {
+                                {
                                 isLoading && <div className="loader-container"><Spin indicator={antIcon}/></div>
                             }
                             {
-                                isSubmitted && <p id="success" className="success-message">You are now subscribed to receive our latest news and updates</p>
+                                 isSubmitted && <p id="success" className="success-message">You are now subscribed to receive our latest news and updates!</p>
                             }
                         </form>
+                        </div>
                 </div>
             <Footer />
             </div>
