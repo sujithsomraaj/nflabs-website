@@ -657,6 +657,21 @@ li ol > li:before {
   }
 }
 
+/* about page */
+.about-wrapper {
+  text-align: center;
+}
+
+.about-heading {
+  font-family: var(--font-1);
+  font-size: var(--size-2);
+}
+
+.about-desc {
+  font-family: var(--font-1);
+  font-size: var(--size-3);
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1055px) {
@@ -743,6 +758,10 @@ li ol > li:before {
 
   .name {
     display: block;
+  }
+
+  .name div:not(:first-child) {
+    margin-left: 0px;
   }
 
   .form-group2 {

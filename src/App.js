@@ -7,6 +7,7 @@ import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import Disclaimer from "./pages/Disclaimer";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/privacy-policy" component={PrivacyPolicy} />
         <Route exact path="/terms-and-conditions" component={TermsConditions} />
         <Route exact path="/disclaimer" component={Disclaimer} />
+        <Route exact path="/about-us" component={AboutUs} />
       </Switch>
     </Router>
   );
