@@ -274,10 +274,12 @@ body {
 .newsletter button {
   position: absolute;
   max-height: 55px;
+  width: 30%;
   top: 0;
   right: 0px;
   padding: 1rem 2rem;
   background: var(--orange);
+  outline: var(--orange);
   border: none;
   color: var(--white);
   text-transform: capitalize;
@@ -285,6 +287,9 @@ body {
   border-radius: 0px 8px 8px 0px;
   font-weight: bold;
   font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter button:hover {
@@ -632,12 +637,24 @@ li ol > li:before {
 }
 
 /* loader */
-.loader-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  max-height: 30px;
-  width: 100%;
+.loader {
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Media Queries */

@@ -6,8 +6,7 @@ import Lottie from 'react-lottie'
 import animation1 from '../assets/lottie/header.json'
 import animation2 from '../assets/lottie/section-one.json'
 import animation3 from '../assets/lottie/flying-birds.json'
-import { Spin } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
+import {ImSpinner9} from "react-icons/im"
 
 export default class Home extends React.Component{
     state= {
@@ -88,7 +87,6 @@ export default class Home extends React.Component{
             }
         };
 
-        const antIcon = <LoadingOutlined style={{ color: "#ff9933" }} spin />;
         return(
             <div>
                 <Navbar />
@@ -163,11 +161,9 @@ export default class Home extends React.Component{
                                 required
                                 />
                                 <button type="submit">
-                                    Enroll Me In
+                                 {isLoading && <ImSpinner9 className="loader"/>}
+                                Enroll Me In
                                 </button>
-                                {
-                                isLoading && <div className="loader-container"><Spin indicator={antIcon}/></div>
-                            }
                             {
                                  isSubmitted && <p id="success" className="success-message">{message}</p>
                             }
