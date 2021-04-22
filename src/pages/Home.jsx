@@ -14,6 +14,7 @@ export default class Home extends React.Component{
         EmailAddress: "",
         isSubmitted: false,
         isLoading: false,
+        message:"",
     }
 
     onChangeHandle = (e) => {
@@ -28,20 +29,39 @@ export default class Home extends React.Component{
 
         axios.post("https://contact-nodeberry.herokuapp.com/contacts/nf_labs/subscribe", {
             EmailAddress: this.state.EmailAddress,
+        }).then(response => {
+            if(response.data.error === false) {
+                this.setState({
+                    EmailAddress: "",
+                    isSubmitted: true,
+                    isLoading: false,
+                    message:"You are now subscribed to receive our latest news and updates!"
+                })
+            } else(
+                this.setState({
+                    EmailAddress: "",
+                    isSubmitted: true,
+                    isLoading: false,
+                    message: response.data.message,
+                })
+            )
         })
-
-        this.setState({
-            EmailAddress: "",
-            isSubmitted: true,
-            isLoading: false,
+        .catch(error => {
+            if(error) {
+                this.setState({
+                    message: "We are unable to process this request at the moment, Please try again later."
+                })
+            }
         })
-
-        setTimeout(function(){
-            document.getElementById("success").innerHTML="";
+        
+        setTimeout(() => {
+            this.setState({
+                message: "",
+            })
             },6000);
     }
     render(){
-        const {EmailAddress, isSubmitted, isLoading} = this.state
+        const {EmailAddress, isSubmitted, isLoading, message} = this.state
 
         const defaultOptions1 = {
             loop: true,
@@ -149,7 +169,7 @@ export default class Home extends React.Component{
                                 isLoading && <div className="loader-container"><Spin indicator={antIcon}/></div>
                             }
                             {
-                                 isSubmitted && <p id="success" className="success-message">You are now subscribed to receive our latest news and updates!</p>
+                                 isSubmitted && <p id="success" className="success-message">{message}</p>
                             }
                         </form>
                         </div>
