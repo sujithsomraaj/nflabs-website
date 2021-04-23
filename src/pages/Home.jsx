@@ -48,6 +48,9 @@ export default class Home extends React.Component{
         .catch(error => {
             if(error) {
                 this.setState({
+                    EmailAddress:"",
+                    isSubmitted: true,
+                    isLoading: false,
                     message: "We are unable to process this request at the moment, Please try again later."
                 })
             }
