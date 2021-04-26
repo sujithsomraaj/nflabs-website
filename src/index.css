@@ -735,7 +735,7 @@ li ol > li:before {
   }
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 960px) {
   .footer {
     display: block;
     text-align: center;

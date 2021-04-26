@@ -4,7 +4,8 @@ import {
     FaInstagram, 
     FaTwitter, 
     FaLinkedinIn, 
-    FaTelegramPlane} from "react-icons/fa";
+    FaTelegramPlane, 
+    FaMediumM} from "react-icons/fa";
 
 
 export default class Footer extends React.Component{
@@ -13,15 +14,17 @@ export default class Footer extends React.Component{
             <div className="footer-wrapper">
                 <div className="footer container">
                 <div className="social-icons">
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
+                        <div className="social-items"><a href="https://www.facebook.com/NFLabs.io/" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
                         </div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
+                        <div className="social-items"><a href="https://www.instagram.com/nflabs.io/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                         </div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
+                        <div className="social-items"><a href="https://twitter.com/labs_nf" target="_blank" rel="noopener noreferrer"><FaTwitter/></a>
                         </div>
-                        <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaLinkedinIn/></a>
+                        <div className="social-items"><a href="https://www.linkedin.com/company/nf-labs/about/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn/></a>
                         </div>
                         <div className="social-items"><a href="##" target="_blank" rel="noopener noreferrer"><FaTelegramPlane/></a>
+                        </div>
+                        <div className="social-items"><a href="https://medium.com/@NFLabs" target="_blank" rel="noopener noreferrer"><FaMediumM/></a>
                         </div>
                     </div>
                     <p className="footer-tab2">
