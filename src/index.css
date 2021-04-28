@@ -658,18 +658,156 @@ li ol > li:before {
 }
 
 /* about page */
-.about-wrapper {
-  text-align: center;
+
+.about-sec {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.main-content {
+  flex: 1;
+  margin-bottom: 5rem;
+}
+
+.about {
+  margin-bottom: 40px;
 }
 
 .about-heading {
   font-family: var(--font-1);
-  font-size: var(--size-2);
+  font-size: 32px;
 }
 
 .about-desc {
   font-family: var(--font-1);
-  font-size: var(--size-3);
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.main-img {
+  flex: 1;
+  margin-bottom: 5rem;
+}
+
+.main-img-container {
+  width: 95%;
+  padding-top: 20px;
+}
+
+.main-img-container img {
+  width: 100%;
+}
+
+.about-sec2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+  margin-top: 64px;
+  gap: 60px;
+}
+
+.transform {
+  flex: 1;
+}
+
+.transform img {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.moveon {
+  flex: 1;
+}
+
+.moveon img {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 180px;
+}
+
+.team {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.team-desc {
+  font-family: var(--font-1);
+  font-size: 18px;
+}
+
+/* slider */
+
+.slider-box {
+  display: grid;
+  place-content: center;
+  margin-top: 48px;
+}
+
+.slider {
+  max-width: 1100px;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.slider-items {
+  max-width: 225px;
+}
+
+.slider-items h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: var(--font-1);
+  color: var(--black);
+}
+
+.slider-items p {
+  font-size: 16px;
+  font-family: var(--font-1);
+  color: var(--grey);
+}
+
+.slider-items img {
+  width: 100%;
+  height: auto;
+}
+
+.join {
+  margin-top: 64px;
+  margin-bottom: 48px;
+  padding: 3rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.join h1 {
+  font-family: var(--font-1);
+  font-size: 32px;
+}
+.join p {
+  margin-bottom: 48px;
+  font-family: var(--font-1);
+  font-size: 20px;
+}
+
+.join-btn {
+  background: var(--orange);
+  border-radius: 8px;
+  font-family: var(--font-1);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  width: 200px;
 }
 
 /* Media Queries */
