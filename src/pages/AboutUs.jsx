@@ -33,13 +33,17 @@ export default class About extends React.Component {
                 </section>
                 <section className="container about-sec2">
                     <div className="transform">
+                        <div className="transform-img-container">
                         <img src={artwork2} alt="Second Artwork"/>
-                        <h1 className="about-heading">We Transform Industries</h1>
+                        </div>
+                        <h1 className="about-heading mg-top2">We Transform Industries</h1>
                         <p className="about-desc">Everything that NF Labs Carter is unique and non-fungible. The name non-fungible doesn’t mean we’re doing just NFTs; we do everything that’s only unique out there in the market. Now the blockchain space is crowded by fungible projects that range from AMM to some yield farming.</p>
                     </div>
                     <div className="moveon">
+                        <div className="moveon-img-container">
                         <img src={artwork3} alt="Third Artwork"/>
-                        <h1 className="about-heading">Move On (Chain)</h1>
+                        </div>
+                        <h1 className="about-heading mg-top2">Move On (Chain)</h1>
                         <p className="about-desc">Decentralization of Art, Real Estate & Even Stocks are now a possibility on blockchain. But it can’t go far until it’s scalable. On-chain scalability is limited to the cost of resources, and we’re here to help everyone break those barriers and build everything on chain.</p>
                     </div>
                 </section>
