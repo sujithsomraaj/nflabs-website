@@ -21,10 +21,10 @@ export default class ContactUs extends React.Component{
                         <h3 className="form-heading form-group">Enquiry Form:</h3>
                         <form className="form">
                             <div className="name form-group">
-                            <div className="form-group2">
+                            <div className="form-group2 first-name">
                                 <input type="text" placeholder="First Name" required/>
                             </div>
-                            <div>
+                            <div className="last-name">
                                 <input type="text" placeholder="Last Name" required/>
                             </div>
                             </div>

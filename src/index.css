@@ -398,7 +398,7 @@ body {
   padding: 0.4rem 1rem;
   outline-color: var(--orange);
   font-family: var(--font-1);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 input::-webkit-input-placeholder {
@@ -436,10 +436,15 @@ textarea::-moz-placeholder {
 
 .name {
   display: flex;
+  gap: 20px;
 }
 
-.name div:not(:first-child) {
-  margin-left: 20px;
+.first-name {
+  flex: 1;
+}
+
+.last-name {
+  flex: 1;
 }
 
 .form-heading {
@@ -470,31 +475,38 @@ textarea::-moz-placeholder {
   border-radius: 8px;
   font-size: 1.1rem;
   text-transform: capitalize;
+  outline: none;
 }
 
 .contact-details {
   background: transparent linear-gradient(180deg, #ff9933 0%, #ff3333 100%) 0%
     0% no-repeat padding-box;
   border-radius: 0px 7px 7px 0px;
+  position: relative;
+  display: flex;
 }
 
 .map-container {
+  position: absolute;
   padding: 1rem;
   text-align: right;
   max-height: 200px;
+  top: 0;
+  right: 0px;
 }
 
 .map-container img {
   max-width: 100%;
   height: auto;
-  top: 0;
-  right: 0px;
   padding: 1rem;
 }
 
 .contact-info {
   padding: 0 2rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 32px;
 }
 
 .contact-info h3 {
@@ -820,6 +832,12 @@ li ol > li:before {
 
 /* Media Queries */
 
+@media only screen and (max-width: 1145px) {
+  .map-container img {
+    max-width: 80%;
+  }
+}
+
 @media only screen and (max-width: 1055px) {
   .section-two {
     margin-top: 40px;
@@ -928,6 +946,22 @@ li ol > li:before {
 
   .contact-details {
     border-radius: 0px 0px 7px 7px;
+    position: unset;
+    display: block;
+  }
+
+  .map-container {
+    position: unset;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .map-container {
+    text-align: center;
+  }
+
+  .map-container img {
+    width: 60%;
   }
 }
 
