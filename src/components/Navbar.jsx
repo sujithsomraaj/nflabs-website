@@ -53,7 +53,6 @@ onClose = () => {
                     <ul>
                     <li className="mobile-navbar-items" onClick = {()=>{window.location = "/about-us"}}>About Us</li>
                     <li className="mobile-navbar-items" onClick = {()=>{window.location = "/products"}}>Products</li>
-                    <li className="mobile-navbar-items">Services</li>
                     <li className="mobile-navbar-items">News and Events</li>
                     <li className="mobile-navbar-items" onClick={() => {window.location = "/contact-us"}}>Contact Us</li>
                   </ul>
@@ -61,7 +60,6 @@ onClose = () => {
                   <ul>
                     <li onClick = {()=>{window.location = "/about-us"}}>About Us</li>
                     <li onClick = {()=>{window.location = "/products"}}>Products</li>
-                    <li>Services</li>
                     <li>News and Events</li>
                     <li onClick={() => {window.location = "/contact-us"}}>Contact Us</li>
                   </ul>
