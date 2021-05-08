@@ -120,12 +120,16 @@ body {
   font-size: 19px;
 }
 
-.social-icons a:hover {
+.social-items a:hover {
   color: var(--orange);
 }
 
 .copy:hover {
   color: var(--orange);
+}
+
+.two-icons :not(:first-child) {
+  margin-left: 20px;
 }
 
 /* Home CSS */
@@ -765,7 +769,7 @@ li ol > li:before {
 
 .slider-items img {
   width: 100%;
-  height: auto;
+  height: 220px;
 }
 
 .join {

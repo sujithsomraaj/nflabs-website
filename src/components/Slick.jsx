@@ -1,10 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaLinkedin } from "react-icons/fa";
-import photo1 from "../assets/photo1.png";
-import photo2 from "../assets/photo2.png";
-import photo3 from "../assets/photo3.png";
+import { FaLinkedin, FaBehance } from "react-icons/fa";
 import photo4 from "../assets/photo4.png";
 import prev from "../assets/left-circle.svg";
 import next from "../assets/right-circle.svg";
@@ -73,59 +70,47 @@ const Slick = () => {
         <div className="slider-box container">
         <Slider {...settings}>
           <div className="slider-items">
-              <img src={photo1} alt="Joe Russo"/>
-                <h3>Joe Russo</h3>
-                <p>Co-Founder</p>
-                <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+              <img src="https://nf-labs.s3.amazonaws.com/team-pics/desh.jpeg" alt="Deshaka Kandewatta"/>
+                <h3>Deshaka Kandewatta</h3>
+                <p>Co-founder & CPO</p>
+                <div className="social-items">
+                  <a href="https://www.linkedin.com/in/deshaka-kandewatte/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
                 </div>
           </div>
           <div className="slider-items">
-            <img src={photo2} alt="Karen Gillan"/>
-            <h3>Karen Gillan</h3>
-            <p>Chief Project Manager</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+            <img src="https://nf-labs.s3.amazonaws.com/team-pics/rasel.jpeg" alt="Md Asaduzzaman Rasel"/>
+            <h3>Md Asaduzzaman Rasel</h3>
+            <p>Co-Founder & Blockchain developer</p>
+            <div className="social-items">
+              <a href="https://www.linkedin.com/in/asadrasel/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
             </div>
           </div>
           <div className="slider-items">
-          <img src={photo3} alt="Kevin Fiege"/>
-            <h3>Kevin Fiege</h3>
+          <img src="https://nf-labs.s3.amazonaws.com/team-pics/sujith.jpeg" alt="Sujith Somraaj"/>
+            <h3>Sujith Somraaj</h3>
+            <p>CTO</p>
+            <div className="social-items">
+              <a href="https://www.linkedin.com/in/sujith-somraaj/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+            </div>
+          </div>
+          <div className="slider-items">
+          <img src={photo4} alt="Loven"/>
+            <h3>Loven</h3>
             <p>Head of Design</p>
             <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
             </div>
           </div>
           <div className="slider-items">
-          <img src={photo4} alt="Anthony Mackie"/>
-            <h3>Anthony Mackie</h3>
-            <p>Blockchain Developer</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-            </div>
-          </div>
-          <div className="slider-items">
-          <img src={photo1} alt="Joe Russo"/>
-            <h3>Joe Russo</h3>
-            <p>Co-Founder</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-            </div>
-          </div>
-          <div className="slider-items">
-          <img src={photo2} alt="Karen Gillan"/>
-            <h3>Karen Gillan</h3>
-            <p>Chief Project Manager</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-            </div>
-          </div>
-          <div className="slider-items">
-          <img src={photo3} alt="Kevin Fiege"/>
-            <h3>Kevin Fiege</h3>
-            <p>Head of Design</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-            </div>
-          </div>
-          <div className="slider-items">
-          <img src={photo4} alt="Anthony Mackie"/>
-            <h3>Anthony Mackie</h3>
-            <p>Blockchain Developer</p>
-            <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+            <img src="https://nf-labs.s3.amazonaws.com/team-pics/rohit_singh.jpg" alt="Rohit Singh Bora"/>
+            <h3>Rohit Singh Bora</h3>
+            <p>UI/UX Designer</p>
+            <div className="social-items two-icons">
+              <a href="https://www.linkedin.com/in/rsb-design/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin/>
+              </a>
+              <a href="https://www.behance.net/RSB_Portfolio" target="_blank" rel="noopener noreferrer">
+                <FaBehance/>
+              </a>
             </div>
           </div>
         </Slider>
