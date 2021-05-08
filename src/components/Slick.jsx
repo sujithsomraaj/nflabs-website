@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import photo4 from "../assets/photo4.png";
 import prev from "../assets/left-circle.svg";
 import next from "../assets/right-circle.svg";
