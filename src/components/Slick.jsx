@@ -100,19 +100,6 @@ const Slick = () => {
             <div className="social-items"><a href="!#" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
             </div>
           </div>
-          <div className="slider-items">
-            <img src="https://nf-labs.s3.amazonaws.com/team-pics/rohit_singh.jpg" alt="Rohit Singh Bora"/>
-            <h3>Rohit Singh Bora</h3>
-            <p>UI/UX Designer</p>
-            <div className="social-items two-icons">
-              <a href="https://www.linkedin.com/in/rsb-design/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin/>
-              </a>
-              <a href="https://www.behance.net/RSB_Portfolio" target="_blank" rel="noopener noreferrer">
-                <FaBehance/>
-              </a>
-            </div>
-          </div>
         </Slider>
       </div>
     )

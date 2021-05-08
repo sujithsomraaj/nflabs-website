@@ -128,10 +128,6 @@ body {
   color: var(--orange);
 }
 
-.two-icons :not(:first-child) {
-  margin-left: 20px;
-}
-
 /* Home CSS */
 
 .jumbotron-wrapper {
