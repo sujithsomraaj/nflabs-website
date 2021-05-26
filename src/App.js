@@ -10,19 +10,19 @@ import Disclaimer from "./pages/Disclaimer";
 import AboutUs from "./pages/AboutUs";
 
 function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/products" component={Products} />
-        <Route exact path="/contact-us" component={ContactUs} />
-        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
-        <Route exact path="/terms-and-conditions" component={TermsConditions} />
-        <Route exact path="/disclaimer" component={Disclaimer} />
-        <Route exact path="/about-us" component={AboutUs} />
-      </Switch>
-    </Router>
-  );
+	return (
+		<Router>
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/products" component={Products} />
+				<Route exact path="/contact-us" component={ContactUs} />
+				<Route exact path="/privacy-policy" component={PrivacyPolicy} />
+				<Route exact path="/terms-and-conditions" component={TermsConditions} />
+				<Route exact path="/disclaimer" component={Disclaimer} />
+				<Route exact path="/about-us" component={AboutUs} />
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
